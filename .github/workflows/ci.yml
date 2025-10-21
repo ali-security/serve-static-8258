@@ -6,7 +6,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     strategy:
       matrix:
         name:
@@ -180,7 +180,7 @@ jobs:
 
   coverage:
     needs: test
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
     - name: Uploade code coverage
       uses: coverallsapp/github-action@master
